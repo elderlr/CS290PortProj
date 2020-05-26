@@ -1,6 +1,8 @@
 /* I used the following to help with the below code */
 /*https://www.w3schools.com/css/css3_box-sizing.asp*/
 /*  https://www.w3schools.com/howto/howto_js_topnav.asp */
+/* I am not used to commenting CSS*/
+/*I mostly just aproash CSS page by page. Due to this most of the CSS will take place on the first page as it setts it up for the other pages to use. Yet, as I moved through the other pages I did find specific places where more CSS was needed.*/
 * {
     box-sizing: border-box;
 }
@@ -93,7 +95,7 @@ body {
     margin: auto;
     padding-bottom: 40px;
 }
-
+/*All is to bring items to 100% width of the current screen*/
 .All {
     max-height: 100%;
     max-width: 100%;
@@ -186,7 +188,7 @@ body {
     opacity: 1;
 }
 /* Page two*/
-
+/* noDot is to create unordered lists that lack a "dot" */
 .noDot {
     list-style-type: none;
 }

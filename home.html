@@ -1,5 +1,6 @@
-<! DOCTYPE html>
+﻿<! DOCTYPE html>
 <!-- Carousel learned from w3 schools -->
+<!--This is the opening webpage for my portfolio project-->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -17,13 +18,16 @@
         <a href="./third.html">Attributes Test</a>
         <a href="./fourth.html">Attribute Resources</a>
     </div>
+    <!--I used a table to help with keeping the paragraph to the left of the images on the left regardless of window size-->
     <table>
         <tr>
             <th></th>
             <th>
+                <!-- the back button-->
                 <a class="Prev">Back</a>
             </th>
             <th>
+                <!--Here is the location of the tab buttons. Most people will have these over the picture. I just wanted to put the table to use and do it this way-->
                 <div>
                     <ul id="mySlides_sub" class="mySlides_sub">
                         <li class="sub" onclick="showPicture(1)"></li>
@@ -33,12 +37,13 @@
                 </div>
             </th>
             <th>
+                <!--the image next button-->
                 <a class="Next">Next</a>
             </th>
         </tr>
         <tr>
             <th id="sidePar">
-                <p  style="font-size:25px;">
+                <p style="font-size:25px;">
                     We are all familiar with the letters of the English Language's Alphabet. From an
                     early age we learn our 123s and our ABCs. Yet, it isn't until much later in life,
                     when we have come into our own. That we can begin to appreciate the impact letters have on our lives.
@@ -50,7 +55,7 @@
                 <div class="slideshow-container">
 
                     <!-- The images and caption text. -->
-                    <div class="mySlides">
+                    <div class="mySlides"> <!-- originaly I had the images in the Img-File folder but I was having difficulty getting the permissions for them to display on the Flip-->
                         <img class="All" src="./i-b-m-pic.jpg" alt="Graphical representation of I, B, and M">
                         <div class="mySlidesText">by Laura Elder</div>
                     </div>
@@ -69,6 +74,7 @@
             </th>
         </tr>
     </table>
+    <!-- below is an ordered list and some paragraphs-->
     <div class="mid_head">
         <h1 class="mid"> Alphabetical Attributes- An Introduction</h1>
     </div>
@@ -87,7 +93,7 @@
             letter groups. The <strong>Attributes Test</strong> page will ask a series of questions to determine your group. Go to the <strong>Attributes Resources</strong> page to download a pamphlet to better explain to your friends and family.
         </p>
     </div>
-    <!--> create link to the script file</!-->
+    <!--> create link to the script file<-->
     <script src="script.js"></script>
 </body>
 </html>

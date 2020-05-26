@@ -2,6 +2,7 @@
 /*https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9*/
 //both of the above sites helped me come to the below code
 
+//this top function is very close to w3schools it was interesting to try and combined the two seperate functions that they had
 function showPicture(n) {
     var i;
     var slide = document.getElementsByClassName("mySlides");
@@ -44,7 +45,8 @@ function nextPicture() {
     slideIndex += 1;
     showPicture(slideIndex);
 }
-
+//These event listeners took me the longest.
+//It took me a long time to figure out how to get the clock to "stop" for the button clicks
 // Add listener to previous picture button
 document.getElementsByClassName("Prev")[0].addEventListener("click",
     previousPicture)
@@ -53,7 +55,7 @@ document.getElementsByClassName("Prev")[0].addEventListener("click",
 document.getElementsByClassName("Next")[0].addEventListener("click",
     nextPicture)
 
-// Call first picture
+// Call first picture. I tried to think of other ways to do this by first declaring the variable to be 1 from the get go but that didn't work.
 var slideIndex = 0;
 showPicture(slideIndex);
 
